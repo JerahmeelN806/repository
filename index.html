@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jerahmeel website</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css" />
 
@@ -34,7 +36,7 @@
                 <i id="bar" class="fas fa-outdent"></i>
                </div>
            </section>
-  <section id="hero" >
+  <section id="hero"  data-aos="fade-up" >
    <h4>Trade in offer</h4>
    <h2>supper value deals</h2>
    <h1>On all products</h1>
@@ -42,7 +44,7 @@
    <button>Shop now</button>
   </section> 
     
-<section id="features" class="section-p1">
+<section id="features" class="section-p1" data-aos="zoom-in">
 <div class="fe-box">
 <img src="/img/f1.png" alt="">
 <h6>Free Shiping</h6>
@@ -70,7 +72,7 @@
 
 </section>
 
-<section id="products1"  class="section-p1">
+<section id="products1"  class="section-p1"  data-aos="fade-down">
 <h2>Featured Products</h2>
 <p>Summer collection New Modern Design</p>
 <div class="pro-container">
@@ -212,7 +214,7 @@
 <button class="normal">Explore More</button>
 </section>
 
-<section id="products1"  class="section-p1">
+<section id="products1"  class="section-p1" data-aos="fade-down">
     <h2>New Arrivals</h2>
     <p>Summer collection New Modern Design</p>
     <div class="pro-container">
@@ -352,7 +354,7 @@
     
 
 
-<section id="sm-banner" class="section-p1">
+<section id="sm-banner" class="section-p1" data-aos="fade-up">
     <div class="banner-box">
         <h4>crazy deals</h4>
         <h2>buy 1 get 1 Free</h2>
@@ -368,7 +370,7 @@
     </div>
 </section>
 
-<section id="banner3">
+<section id="banner3" data-aos="fade-down">
     
 <div class="banner-box">
 <h2>SEASONAL SALE</h2>
@@ -384,21 +386,23 @@
 </div>
 </section>
 
-<section id="newsletter" class="section-p1  section-m1">
-   
-    <div class="newsletter">
-        <h4>Sign Up For Newsletters</h4>
+
+
+<div class="newsletter" data-aos="fade-up">
+    <div class="newsletter-content">
+        <h2>Sign Up For Newsletters</h2>
         <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
     </div>
-    <div class="form">
+    <form class="newsletter-form">
         <input type="email" placeholder="Your email address" required>
-        <button class="normal">Sign Up</button>
-    </div>
+        <button type="submit">Sign Up</button>
+    </form>
+</div>
 
   
 </section>
 
-<footer class="section-p1">
+<footer class="section-p1" data-aos="fade-down">
 <div class="col">
 <img class="logo" src="/img/logo.png">
 <h4>Contact</h4>
@@ -457,5 +461,13 @@
 
 
   <script src="index.js"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        offset: 300,
+        duration:1450,
+    });
+  </script>
 </body>
 </html>
